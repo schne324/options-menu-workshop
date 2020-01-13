@@ -14,15 +14,12 @@ export default class MenuButton {
     i++
 
     // menu button attrs
-    this.button.setAttribute('aria-haspopup', 'true')
     this.button.setAttribute('aria-controls', menu.id)
     this.button.setAttribute('aria-expanded', 'false')
 
     // menu / menuitems attrs
-    this.menu.setAttribute('role', 'menu')
     this.menu.setAttribute('aria-labelledby', button.id)
     this.menuItems.forEach(item => {
-      item.setAttribute('role', 'menuitem')
       item.tabIndex = -1
     })
 
@@ -41,71 +38,53 @@ export default class MenuButton {
     )
   }
 
+  /**
+   * Handles keydowns on the menu
+   * @param {Object} e
+   */
   onMenuKeydown(e) {
     switch (e.key) {
       case 'Enter':
       case 'Escape':
         e.preventDefault()
-        this.closeMenu()
+        // TODO!
         break
       case 'ArrowDown': {
-        const currentIndex = this.menuItems.indexOf(
-          e.target
-        )
-        this.menuItems[
-          currentIndex === this.menuItems.length - 1
-            ? 0
-            : currentIndex + 1
-        ].focus()
+        // TODO!
         break
       }
       case 'ArrowUp': {
-        const currentIndex = this.menuItems.indexOf(
-          e.target
-        )
-        this.menuItems[
-          currentIndex === 0
-            ? this.menuItems.length - 1
-            : currentIndex - 1
-        ].focus()
+        // TODO!
         break
       }
       case 'Home':
-        this.menuItems[0].focus()
+        // TODO!
         break
       case 'End':
-        this.menuItems[this.menuItems.length - 1].focus()
+        // TODO!
         break
     }
   }
 
+  /**
+   * Handles keydowns on the button (trigger)
+   * @param {Object} e
+   */
   onButtonKeydown(e) {
     switch (e.key) {
       case 'ArrowUp':
-        this.openMenu(this.menuItems.length - 1)
+        // TODO!
         break
       case 'ArrowDown':
       case 'Enter':
       case ' ':
         e.preventDefault()
-        this.openMenu()
+        // TODO!
         break
     }
   }
 
   onButtonClick() {
-    this.openMenu()
-  }
-
-  openMenu(focusIndex = 0) {
-    this.button.setAttribute('aria-expanded', 'true')
-    this.menu.classList.add(ACTIVE_CLASS)
-    this.menuItems[focusIndex].focus()
-  }
-
-  closeMenu() {
-    this.button.setAttribute('aria-expanded', 'false')
-    this.menu.classList.remove(ACTIVE_CLASS)
-    this.button.focus()
+    // TODO!
   }
 }
