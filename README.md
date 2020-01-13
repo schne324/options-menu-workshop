@@ -1,4 +1,4 @@
-# Options Menu Workshop
+# Options Menu Workshop [![Netlify Status](https://api.netlify.com/api/v1/badges/17186340-a975-4bc5-9e7f-6f5f8cb6b273/deploy-status)](https://app.netlify.com/sites/options-menu-workshop/deploys)
 
 > Let's build a fully tested, accessible, reusable menu button component together
 
