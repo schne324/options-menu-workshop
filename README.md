@@ -153,22 +153,42 @@ As we build out the functionality, our tests will start passing!
 
 </details>
 
+```sh
+# NOTE: you can fork it if you want!
+$ git clone git@github.com:schne324/options-menu-workshop.git
+$ cd options-menu-workshop
+$ git checkout origin/start
+$ git checkout -b start
+```
+
+<details>
+  <summary>or copy and paste this</summary>
+
+```sh
+git clone git@github.com:schne324/options-menu-workshop.git && cd options-menu-workshop && git checkout origin/start && git checkout -b start
+```
+
+</details>
+
 ### Install dependencies...
 
 ```sh
 $ yarn
+# or if you prefer npm, execute: npm install
 ```
 
 ## Running tests
 
 ```sh
 $ yarn test
+# or if you prefer npm, execute: npm test
 ```
 
 ## Running demo server
 
 ```sh
 $ yarn dev
+# or if you prefer npm, execute: npm run dev
 ```
 
 navigate in browser to [`localhost:1234`](http://localhost:1234)
