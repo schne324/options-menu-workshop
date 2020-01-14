@@ -85,7 +85,7 @@ _ARIA defines a way to make Web content and Web applications more accessible to 
 
 #### Gathering requirements
 
-> [WAI-ARIA Authoring Practices](w3.org/TR/wai-aria-practices-1.1/) is a guide for understanding how to use WAI-ARIA to create an accessible Rich Internet Application.
+> [WAI-ARIA Authoring Practices](https://w3.org/TR/wai-aria-practices-1.1/) is a guide for understanding how to use WAI-ARIA to create an accessible Rich Internet Application.
 
 - definition of widget
 - examples
